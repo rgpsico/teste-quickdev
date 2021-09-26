@@ -46,7 +46,7 @@ class moviesController extends Controller
    public function popularmMovies($popular)
    {
       if (!$popularMovies =  $this->service->popularMovies($popular)) {
-         return response()->json(['message' => 'the movie Not Found'], 404);
+         return response()->json(['message' => 'thee movie Not Found'], 404);
       }
 
       return moviesResource::collection($popularMovies);
